@@ -1,0 +1,1 @@
+{"update_check":"85fbc7f6578177352badc2f699de52a7","update_data":"{\"status\":\"update-available\",\"message\":\"New version available! <a href=\\\"http:\\\/\\\/www.yootheme.com\\\" target=\\\"_blank\\\">Download Joomla 2.5\\\/3.1 Extension 1.4.5<\\\/a>\"}"}

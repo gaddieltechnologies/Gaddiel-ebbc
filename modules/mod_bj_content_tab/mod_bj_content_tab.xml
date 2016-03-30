@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="2.5.3">
+    <name>BJ Content Tab</name>
+    <creationDate>12th September 2010</creationDate>
+    <author>ByJoomla.com</author>
+    <copyright>(C) 2008-2010 BYJoomla.com. All rights reserved.</copyright>
+    <authorEmail>admin@byjoomla.com</authorEmail>
+    <authorUrl>http://www.byjoomla.com</authorUrl>
+    <version>2.5.3</version>
+    <description>
+		This module shows articles in a tabber-style.
+    </description>
+     <files>         
+         <filename module="mod_bj_content_tab">mod_bj_content_tab.php</filename>
+         <filename >tmpl/default.php</filename>
+		 <filename >tmpl/index.html</filename>
+		 <filename >index.html</filename>
+		 <filename >helper.php</filename>
+		 <filename >elements/color.php</filename>
+		 <filename >media/js/jscolor/jscolor.js</filename>
+		 <filename >media/js/jscolor/arrow.gif</filename>
+		 <filename >media/js/jscolor/cross.gif</filename>
+		 <filename >media/js/jscolor/hs.png</filename>
+		 <filename >media/js/jscolor/hv.png</filename>
+		 <filename >media/js/jscolor/index.html</filename>
+		 <filename >media/js/jquery-1.4.2.js</filename>
+		 <filename >media/js/jquery-ui.js</filename>
+		 <filename >media/js/jquery.timers.js</filename>
+         <filename >media/css/jquery-ui.css</filename>
+		 <filename >media/themes/venus/panel_bl.jpg</filename>
+		 <filename >media/themes/venus/panel_bottom.jpg</filename>
+		 <filename >media/themes/venus/panel_br.jpg</filename>
+		 <filename >media/themes/venus/panel_right.jpg</filename>
+		 <filename >media/themes/venus/panel_tl.jpg</filename>
+		 <filename >media/themes/venus/panel_tr.jpg</filename>
+		 <filename >media/themes/venus/tab-active-bg.png</filename>
+		 <filename >media/themes/venus/tab-active-l.png</filename>
+		 <filename >media/themes/venus/tab-active-l-first.png</filename>
+		 <filename >media/themes/venus/tab-active-r.png</filename>
+		 <filename >media/themes/venus/tabber-tab-bg.png</filename>
+		 <filename >media/themes/venus/tabber-tab-l.png</filename>
+		 <filename >media/themes/venus/tabber-tab-r.png</filename>
+		 <filename >media/themes/venus/tabber-tabover-bg.png</filename>
+		 <filename >media/themes/venus/tabber-tabover-l.png</filename>
+		 <filename >media/themes/venus/tabber-tabover-r.png</filename>
+		 <filename >media/themes/venus/venus.css</filename>
+     </files>
+    <params addpath="/modules/mod_bj_content_tab/elements">
+    	<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />    	
+        <param name="category_id" type="text" default="1" label="Category Id" description="Id of the Category that you want to show" />
+        <param name="item_count" type="text" default="3" label="Item count" description="Number of items in category that you want to show" />
+        <param name="items" type="text" default="" label="Item List" description="Id of items that you want to show. If leave blank, newest items will be shown" />
+		<param name="icons" type="text" default="typo-earth,typo-thumbup,typo-star" label="Title Class List" description="List of class name that you want to apply for each tabber title (seperated by a comma)" />
+		<param name="@spacer" type="spacer" default="" label="Roller" description="Roller parameters" />
+		<param name="width_panel" type="text" default="100%" label="Panel Width" description="The width of tabber panel" />
+        <param name="content_panel" type="text" default="94%" label="Content Width" description="The width of panel content" />
+		<param name="width_title" type="text" default="100%" label="Title Width" description="The width of tabber title" />
+		<param name="background" type="color" default="FFFFFF" label="Background" description="The background of the panel" />
+		<param name="tab_header" type="radio" default="0" label="Tab Header" description="Use article title or alias as tab header?">
+			<option value="0">Article Alias</option>
+			<option value="1">Article Title</option>
+		</param>
+		<param name="order_by" type="list" default="created DESC" label="Tab Order" description="Tab should be ordered by what property?">
+			<option value="created DESC">Latest Created first</option>
+			<option value="created ASC">Oldest Created first</option>
+			<option value="ordering ASC">Smallest Ordering first</option>
+			<option value="ordering DESC">Biggest Ordering first</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="need_jquery" type="radio" default="0" label="Need jQuery?" description="Need jQuery library? If you use this module in a template which does not using jQuery, please choose Yes. Otherwise, choose No">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+    </params>
+</install>

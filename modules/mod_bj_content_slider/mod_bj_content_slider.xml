@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.1">
+    <name>BJ Content Slider</name>
+    <creationDate>5th April 2012</creationDate>
+    <author>The ByJoomla Team</author>
+    <copyright>(C) 2008-2012 The ByJoomla Team. All rights reserved.</copyright>
+    <authorEmail>admin@byjoomla.com</authorEmail>
+    <authorUrl>http://www.byjoomla.com</authorUrl>
+    <version>1.6.1</version>
+	<license>GNU General Public License v3.0</license>
+    <description>
+    	<![CDATA[
+    	Show news in a slider
+	]]>
+    </description>
+     <files>         
+         <filename module="mod_bj_content_slider">mod_bj_content_slider.php</filename>
+         <filename>tmpl/default.php</filename>
+		 <filename>tmpl/index.html</filename>
+		 <filename>index.html</filename>
+		 <filename>helper.php</filename>
+         <filename>media/js/jquery-1.4.2.js</filename>
+		 <filename>media/js/jquery-contentslider.js</filename>
+		 <filename>media/themes/venus/venus.css</filename>
+		 <filename>media/themes/venus/item.png</filename>
+		 <filename>media/themes/venus/item_active.png</filename>
+		 <filename>media/themes/venus/borders_left.png</filename>
+		 <filename>media/themes/venus/borders_right.png</filename>
+		 <filename>media/themes/venus/box.png</filename>
+     </files>
+    <config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="fieldMODULECLASSSUFFIX" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="category_id" extension="com_content" type="category" multiple="true" default="" label="Categories" description="Sources of articles">
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+				<field name="item_count" type="text" default="3" label="Item count" description="Number of items in category that you want to show" />
+				<field name="order_by" type="list" default="0" label="Tab Order" description="Tab should be ordered by what property?">
+					<option value="0">Latest Created first</option>
+					<option value="1">Oldest Created first</option>
+					<option value="2">Smallest Ordering first</option>
+					<option value="3">Biggest Ordering first</option>
+				</field>
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="load_style" type="list" default="0" label="Load default style" description="Load default style">
+					<option value="0">No style</option>
+					<option value="1">Load default style</option>
+				</field>
+				<field name="slider_height" type="text" default="100" label="Content Slider Height" description="Content Slider Height (in px)" />
+				<field name="roller_interval" type="text" default="500" label="Headline Switching Interval" description="Interval between each headline" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="need_jquery" type="radio" default="0" label="Need jQuery?" description="Need jQuery library? If you use this module in a template which does not using jQuery, please choose Yes. Otherwise, choose No">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+    </config>
+</extension>

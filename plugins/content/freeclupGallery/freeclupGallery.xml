@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.6" type="plugin" group="content" method="upgrade">
+  <name>FreeclupGallery</name>
+  <author>Freeclup</author>
+  <authorEmail>sirmagid@gmail.com</authorEmail>
+  <authorUrl>www.freeclup.com</authorUrl>
+  <copyright>Copyright (c) 2013 - 2013 Freeclup</copyright>
+  <creationDate>2013</creationDate>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.0.0.0</version>
+  <description>FREECLUPGALLERY_DESC</description>
+	<config>
+		<fields name="params">
+		  <fieldset name="basic">
+		    <field name="galleries_rootfolder" type="text" default="images" label="FREECLUPGALLERY_ROOTFOLDER" description="FREECLUPGALLERY_ROOTFOLDER_DESC_16" />
+		    <field name="thb_width" type="text" default="200" size="3" label="FREECLUPGALLERY_TW" description="FREECLUPGALLERY_TW_DESC" />
+		    <field name="thb_height" type="text" default="160" size="3" label="FREECLUPGALLERY_TH" description="FREECLUPGALLERY_TH_DESC" />
+		    <field name="jpg_quality" type="text" default="80" size="3" label="FREECLUPGALLERY_TQ" description="FREECLUPGALLERY_TQ_DESC" />
+		    <field name="smartResize" type="radio" default="1" label="FREECLUPGALLERY_TR" description="FREECLUPGALLERY_TR_DESC">
+		      <option value="0">Disabled</option>
+		      <option value="1">Enabled</option>
+		    </field>
+		  <field name="jqoff" type="radio" default="1" label="JQ-Load" description="jqoff">
+		      <option value="1">ON</option>
+		      <option value="0">OFF</option>
+		  </field>
+		  
+		  	<field name="relative" type="radio"
+					default="1"
+					description="PLG_PAGENAVIGATION_RADIO_RELATIVE_DESC"
+					label="PLG_PAGENAVIGATION_RADIO_RADIOIVE_LABEL"
+			>
+					<option value="1">PLG_PAGENAVIGATION_RADIO_VALUE_TEXT</option>
+					<option value="0">PLG_FREECLUPTAG_RADIO_RELATIVE_BLOG</option>
+			</field>
+		  
+		    <field name="galleryMessages" type="radio" default="1" label="FREECLUPGALLERY_NC" description="FREECLUPGALLERY_NC_DESC">
+		    	<option value="0">Hide</option>
+		      <option value="1">Show</option>
+		    </field>
+		  </fieldset>
+		  <fieldset name="advanced">
+				<field name="cache_expire_time" type="text" default="120" size="3" label="FREECLUPGALLERY_TCEXP" description="FREECLUPGALLERY_TCEXP_DESC" />
+				<field name="memoryLimit" type="text" default="" size="3" label="FREECLUPGALLERY_ML" description="FREECLUPGALLERY_ML_DESC" />
+		  </fieldset>
+
+
+		</fields>
+	</config>
+  <files>
+    <filename plugin="freeclupGallery">freeclupGallery.php</filename>
+    <folder>freeclupGallery</folder>
+  </files>
+  <languages>
+  <language tag="en-GB">en-GB.plg_content_freeclupgallery.sys.ini</language>
+   <language tag="en-GB">en-GB.plg_content_freeclupgallery.ini</language> 
+  </languages>
+	<updateservers>
+		<server type="extension" name="FreeclupGallery">http://www.freeclup.com/extensions/updates/Gallery.xml</server>
+	</updateservers>
+</install>

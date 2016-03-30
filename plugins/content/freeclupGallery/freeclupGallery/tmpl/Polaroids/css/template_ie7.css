@@ -1,0 +1,11 @@
+/**
+; @version		1.0.0.0
+; @package		FreeClupGallery (plugin)
+; @author    	FreeClup - http://www.FreeClup.com
+; @copyright	Copyright (c) 2011-2013
+; @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+/* --- IE styling only --- */
+li.sig-block a.sig-link,
+li.sig-block a.sig-link:hover { float:left; }
+span.sig-pseudo-caption { filter:alpha(opacity=70); }

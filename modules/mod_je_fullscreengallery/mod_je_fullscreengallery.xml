@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site">
+	<name>JE Fullscreen Image Gallery</name> 
+	<author>jExtensions.com</author> 
+	<creationDate>2012 October</creationDate> 
+	<copyright>jExtensions.com</copyright> 
+	<license>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</license> 
+	<authorEmail>support@jExtensions.com</authorEmail> 
+	<authorUrl>http://jExtensions.com</authorUrl> 
+	<version>2.5.0</version> 
+	<description>
+	<![CDATA[
+	<h1>JE - Fullscreen Image Gallery</h1>
+	<div style="margin:0 0 0 10px; font-size:15px;">Download more free extensions at <a href="http://jextensions.com" target="_blank">jExtensions.com</a>;
+	<br/><br/>Get support for this Joomla module on the official <a href="http://jextensions.com/fullscreen-image-gallery-joomla-2.5/" target="_blank">jQuery Fullscreen Image Gallery</a> page.</div><br/>
+	<div style="margin:0 0 0 10px; font-size:11px;">Credits: <a href="http://manos.malihu.gr/simple-jquery-fullscreen-image-gallery" target="_blank" >Fullscreen Image Gallery</a></div>
+	<br/>
+		]]>
+	</description>
+	
+	<files>
+		<filename module="mod_je_fullscreengallery">mod_je_fullscreengallery.php</filename>
+		<filename>index.html</filename>
+		<filename>thumb.php</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+			<field name="jQuery" type="list" default="2" label="jQuery" description="Enable or disable jQuery plugin on this module.">
+				<option value="1">jQuery 1.4.4 (Load localy)</option>
+				<option value="2">jQuery Latest Version</option>
+				<option value="3">Disable jQuery Plugin</option>
+			</field>
+			<field name="imgWidth" type="text" default="1680" label="Image Width" description="Width of slideshow image in pixels." />
+			<field name="imgHeight" type="text" default="1050" label="Image Height" description="Height of slideshow image in pixels." />		
+			
+			<field type="spacer" name="&lt;div style=&quot;color:#444; background:#D5EEFF; border:1px solid #a4cde9; font-size:15px; font-weight:bold; padding:3px; margin:0;&quot;&gt;Slideshow Setup&lt;/div&gt;" />
+			<field name="ViewMode" type="list" default="full" label="View Mode" description="">
+				<option value="full">Full</option>
+				<option value="normal">Normal</option>
+				<option value="original">Original</option>
+			</field>
+			<field name="EasingType" type="list" default="easeOutCirc" label="Scroll Easing Type" description="">
+				<option value="jswing">jswing</option>
+				<option value="def">def</option>
+				<option value="easeInQuad">easeInQuad</option>
+				<option value="easeOutQuad">easeOutQuad</option>
+				<option value="easeInOutQuad">easeInOutQuad</option>
+				<option value="easeInCubic">easeInCubic</option>
+				<option value="easeOutCubic">easeOutCubic</option>
+				<option value="easeInOutCubic">easeInOutCubic</option>
+				<option value="easeInQuart">easeInQuart</option>
+				<option value="easeOutQuart">easeOutQuart</option>
+				<option value="easeInOutQuart">easeInOutQuart</option>
+				<option value="easeInQuint">easeInQuint</option>
+				<option value="easeOutQuint">easeOutQuint</option>
+				<option value="easeInOutQuint">easeInOutQuint</option>
+				<option value="easeInSine">easeInSine</option>
+				<option value="easeOutSine">easeOutSine</option>
+				<option value="easeInOutSine">easeInOutSine</option>
+				<option value="easeInExpo">easeInExpo</option>
+				<option value="easeOutExpo">easeOutExpo</option>
+				<option value="easeInOutExpo">easeInOutExpo</option>
+				<option value="easeInCirc">easeInCirc</option>
+				<option value="easeOutCirc">easeOutCirc</option>
+				<option value="easeInOutCirc">easeInOutCirc</option>
+				<option value="easeInElastic">easeInElastic</option>
+				<option value="easeOutElastic">easeOutElastic</option>
+				<option value="easeInOutElastic">easeInOutElastic</option>
+				<option value="easeInBack">easeInBack</option>
+				<option value="easeOutBack">easeOutBack</option>
+				<option value="easeInOutBack">easeInOutBack</option>
+				<option value="easeInBounce">easeInBounce</option>
+				<option value="easeOutBounce">easeOutBounce</option>
+				<option value="easeInOutBounce">easeInOutBounce</option>
+			</field>
+			<field name="Easing" type="text" default="600" label="Easing Amount" description="Scroll easing amount (0 for no easing)." />
+			<field name="keyboardNav" type="list" default="on" label="Keyboard Navigation" description="">
+				<option value="on">Enable</option>
+				<option value="off">Disable</option>
+			</field>
+			<field name="slideshowAutoPlay" type="list" default="true" label="Autoplay" description="">
+				<option value="true">Enable</option>
+				<option value="false">Disable</option>
+			</field>
+			<field name="slideshowDelay" type="text" default="5" label="Autplay Delay" description="Play next slide in X seconds." />
+			
+			<field type="spacer" name="&lt;div style=&quot;color:#444; background:#D5EEFF; border:1px solid #a4cde9; font-size:15px; font-weight:bold; padding:3px; margin:0;&quot;&gt;Thumbs&lt;/div&gt;" />	
+			<field name="thumbWidth" type="text" default="200" label="Thumb Width" description="Width of images are in pixels." />
+			<field name="thumbHeight" type="text" default="150" label="Thumb Height" description="Height of images are in pixels." />
+			<field name="thumbQuality" type="list" default="100" label="Thumb Quality" description="Quality of the croped thumbnail image.">
+				<option value="100">100%</option>
+				<option value="90">90%</option>
+				<option value="80">80%</option>
+				<option value="70">70%</option>
+				<option value="60">60%</option>
+				<option value="50">50%</option>
+				<option value="40">40%</option>
+				<option value="30">30%</option>
+				<option value="20">20%</option>
+				<option value="10">10%</option>
+			</field>	
+			<field name="thumbAlign" type="list" default="true" label="Thumb Alignment" description="Choose the cropped image alignment.">
+				<option value="t">Top</option>
+				<option value="b">Bottom</option>
+				<option value="l">Left</option>
+				<option value="r">Right</option>
+			</field>
+			
+			<field type="spacer" name="&lt;div style=&quot;color:#444; background:#D5EEFF; border:1px solid #a4cde9; font-size:15px; font-weight:bold; padding:3px; margin:0;&quot;&gt;Slide Images&lt;/div&gt;" />
+			<field type="spacer" name="&lt;div&gt;Choose &quot;Individual&quot; if you would like to set up each slide separately using the Slide 1-20 tabs. Choose &quot;Folder&quot; if you want to load the slide images from the selected folder.&lt;/div&gt;" />
+			
+			<field name="SelectImage" type="list" default="file" label="Select Images" description="Load the images from a folder or set up each slide separately.">
+				<option value="file">Individual</option>
+				<option value="folder">From Folder</option>
+			</field>
+			<field name="imageFolder" type="folderlist" directory="/images" filter="" exclude="" hide_none="0" hide_default="1" label="Select Folder" description="Please choose the folder where the images are located." />
+						
+		</fieldset>
+			
+		<fieldset name="slide_1" label="Slide 1">
+			<field name="Image1" type="media" label="Image Path" description="Choose an image." />	
+			<field name="Caption1" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />					
+		</fieldset>
+		
+		<fieldset name="slide_2" label="Slide 2">
+			<field name="Image2" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption2" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>
+		
+		<fieldset name="slide_3" label="Slide 3">
+			<field name="Image3" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption3" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>
+		
+		<fieldset name="slide_4" label="Slide 4">
+			<field name="Image4" type="media" label="Image Path" description="Choose an image." />		
+			<field name="Caption4" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>
+		
+		<fieldset name="slide_5" label="Slide 5">
+			<field name="Image5" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption5" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>
+		
+		<fieldset name="slide_6" label="Slide 6">
+			<field name="Image6" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption6" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>	
+		
+		<fieldset name="slide_7" label="Slide 7">
+			<field name="Image7" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption7" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>			
+		
+		<fieldset name="slide_8" label="Slide 8">
+			<field name="Image8" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption8" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>
+		
+		<fieldset name="slide_9" label="Slide 9">
+			<field name="Image9" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption9" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>
+		
+		<fieldset name="slide_10" label="Slide 10">
+			<field name="Image10" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption10" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>	
+		
+		<fieldset name="slide_11" label="Slide 11">
+			<field name="Image11" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption12" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>
+		
+		<fieldset name="slide_12" label="Slide 12">
+			<field name="Image12" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption12" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>	
+		
+		<fieldset name="slide_13" label="Slide 13">
+			<field name="Image13" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption13" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>	
+		
+		<fieldset name="slide_14" label="Slide 14">
+			<field name="Image14" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption14" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>	
+		
+		<fieldset name="slide_15" label="Slide 15">
+			<field name="Image15" type="media" label="Image Path" description="Choose an image." />		
+			<field name="Caption15" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>	
+		
+		<fieldset name="slide_16" label="Slide 16">
+			<field name="Image16" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption16" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>	
+		
+		<fieldset name="slide_17" label="Slide 17">
+			<field name="Image17" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption17" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>
+		
+		<fieldset name="slide_18" label="Slide 18">
+			<field name="Image18" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption18" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>	
+		
+		<fieldset name="slide_19" label="Slide 19">
+			<field name="Image19" type="media" label="Image Path" description="Choose an image." />			
+			<field name="Caption19" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>
+
+		<fieldset name="slide_20" label="Slide 20">
+			<field name="Image20" type="media" label="Image Path" description="Choose an image." />		
+			<field name="Caption20" type="textarea" cols="60" rows="5" default="" label="Caption" description="Add image caption here." />						
+		</fieldset>						
+	</fields>
+	</config>
+</extension>

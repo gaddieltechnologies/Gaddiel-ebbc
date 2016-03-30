@@ -1,0 +1,180 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+ 
+  <!-- General and gallery setting -->
+ 
+  <thumb_width>40</thumb_width>
+   
+  <thumb_height>40</thumb_height>
+  
+  
+  <horizontal_space_between_thumbs>2</horizontal_space_between_thumbs>
+    
+  <vertical_space_between_thumbs>2</vertical_space_between_thumbs>
+<allow_thumb_zoom>yes</allow_thumb_zoom>
+<allow_to_maximize_image>yes</allow_to_maximize_image>
+<show_full_screen_button>yes</show_full_screen_button>
+      
+  
+  
+  <thumbs_overlay_shape_color>#000000</thumbs_overlay_shape_color>
+   
+  <buttons_icon_normal_color>#FFFFFF</buttons_icon_normal_color>
+  
+  <buttons_icon_selected_color>#000000</buttons_icon_selected_color>
+  
+  <buttons_background_normal_color>#242424</buttons_background_normal_color>
+  
+  <buttons_background_selected_color>#FFFFFF</buttons_background_selected_color>
+  
+  <zoom_icon_color>#ffffff</zoom_icon_color>
+  
+  <zoom_background_color>#242424</zoom_background_color>
+  
+  <thumb_outline_normal_color>#000000</thumb_outline_normal_color>
+  
+  <thumb_outline_selected_color>#FFFFFF</thumb_outline_selected_color>
+  
+  <thumb_media_icon_color>#FFFFFF</thumb_media_icon_color>
+  
+  <thumb_media_icon_background_color>#242424</thumb_media_icon_background_color>
+  
+  <thumb_background_color>#242424</thumb_background_color>
+  
+  <preloader_color>#FFFFFF</preloader_color>
+  
+  <!-- Video player settings  -->
+  <video_player_width>800</video_player_width>
+  
+  <video_player_height>500</video_player_height>
+  
+  <video_auto_play>yes</video_auto_play>
+  
+  <video_loop>yes</video_loop>
+  
+  <video_volume>90</video_volume>
+  
+  <smoothing>no</smoothing>
+  
+  <videoControlBarHideDelay>3</videoControlBarHideDelay>
+  
+  <showVideoFullScreenButton>yes</showVideoFullScreenButton>
+  
+  <video_buffer_color>#FFFFFF</video_buffer_color>
+  
+  <video_buttons_normal_color>#FFFFFF</video_buttons_normal_color>
+  
+  <video_buttons_selected_color>#595959</video_buttons_selected_color> 
+  
+  <!-- MP3 player settings  -->
+  <mp3_player_width>500</mp3_player_width>
+  
+  <mp3_player_height>150</mp3_player_height>
+  
+  <soundControlBarHideDelay>5</soundControlBarHideDelay>
+  
+  <show_spectrum>yes</show_spectrum>
+  
+  <spectrum_color>#FFFFFF</spectrum_color>
+  
+  <sound_auto_play>yes</sound_auto_play>
+  
+  <sound_loop>yes</sound_loop>
+  
+  <sound_volume>90</sound_volume>
+  
+  <sound_buttons_normal_color>#FFFFFF</sound_buttons_normal_color>
+  
+  <sound_video_buttons_selected_color>#595959</sound_video_buttons_selected_color> 
+  
+ <!------------ ADD / REMOVE IMAGES FROM THE GALLERY ------------>
+  <items>
+  
+
+
+<item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/01.jpg</media_path>
+<description><![CDATA[Autumn is here...]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/02.jpg</media_path>
+<description><![CDATA[Color of Paris]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/03.jpg</media_path>
+<description><![CDATA[Description three]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/04.jpg</media_path>
+<description><![CDATA[Description four]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/01.jpg</media_path>
+<description><![CDATA[Description five]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/02.jpg</media_path>
+<description><![CDATA[Description six]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/03.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/04.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/01.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/02.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/03.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/04.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/01.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/02.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/03.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/04.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/01.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/01.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/02.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/02.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/03.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/03.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item><item><thumb_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/thumbnails/04.jpg</thumb_path>
+<media_path>http://ebenezerbiblebaptistchurch.com/modules/mod_powerful_template/images/04.jpg</media_path>
+<description><![CDATA[]]></description>
+
+           </item>
+</items>
+
+</settings>
+

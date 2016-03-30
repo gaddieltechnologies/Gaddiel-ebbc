@@ -1,0 +1,14 @@
+[12-Mar-2016 04:51:43 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid URI detected.' in /home/sfpeter/public_html/libraries/joomla/environment/uri.php:194
+Stack trace:
+#0 /home/sfpeter/public_html/libraries/joomla/application/application.php(248): JURI::getInstance()
+#1 /home/sfpeter/public_html/includes/application.php(135): JApplication->route()
+#2 /home/sfpeter/public_html/index.php(36): JSite->route()
+#3 {main}
+  thrown in /home/sfpeter/public_html/libraries/joomla/environment/uri.php on line 194
+[12-Mar-2016 04:52:08 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid URI detected.' in /home/sfpeter/public_html/libraries/joomla/environment/uri.php:194
+Stack trace:
+#0 /home/sfpeter/public_html/libraries/joomla/application/application.php(248): JURI::getInstance()
+#1 /home/sfpeter/public_html/includes/application.php(135): JApplication->route()
+#2 /home/sfpeter/public_html/index.php(36): JSite->route()
+#3 {main}
+  thrown in /home/sfpeter/public_html/libraries/joomla/environment/uri.php on line 194
